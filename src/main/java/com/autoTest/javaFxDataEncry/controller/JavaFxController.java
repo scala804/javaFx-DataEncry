@@ -302,7 +302,6 @@ public class JavaFxController {
        return successBoolean;
     }
 
-
     public  Boolean getEncryFilePathAndName(){
       try{
           int  indexTempInt=fileName.lastIndexOf("-");
