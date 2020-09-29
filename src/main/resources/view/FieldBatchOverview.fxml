@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="498.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.autoTest.javaFxDataEncry.controller.JavaFxController">
+   <children>
+      <Label layoutX="33.0" layoutY="48.0" prefHeight="42.0" prefWidth="273.0" text="数据文件加密工具V1.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="134.0" layoutY="134.0" text="加密方式：">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="ChoiceBoxEncryType" layoutX="235.0" layoutY="134.0" prefHeight="23.0" prefWidth="119.0" />
+      <Label layoutX="105.0" layoutY="185.0" text="加密文件路径：">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="encryFilePath" layoutX="239.0" layoutY="183.0" prefHeight="23.0" prefWidth="337.0" />
+
+      <Button fx:id="local_changeDirButton" layoutX="600.0" layoutY="185.0" prefHeight="23.0" prefWidth="55.0" text="浏览" />
+      <Label layoutX="72.0" layoutY="240.0" text="文件结果压缩方式：">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="RadioButtonZip" layoutX="245.0" layoutY="241.0" mnemonicParsing="false" text="zip" />
+      <RadioButton fx:id="RadioButtonRar" layoutX="322.0" layoutY="243.0" mnemonicParsing="false" text="rar" />
+      <RadioButton fx:id="RadioButton7z" layoutX="399.0" layoutY="243.0" mnemonicParsing="false" text="7z" />
+      <Label layoutX="70.0" layoutY="312.0" text="结果文件加密密码：">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="resultEncry" layoutX="217.0" layoutY="310.0" prefHeight="30.0" prefWidth="386.0" />
+      <Label layoutX="68.0" layoutY="388.0" text="结果文件存放目录：">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="341.0" layoutY="454.0" onAction="#handleEncry" prefHeight="23.0" prefWidth="69.0" text="加密" />
+
+      <JFXTextField fx:id="encryFileResultPath" layoutX="237.0" layoutY="389.0" prefHeight="23.0" prefWidth="344.0" />
+      <Button fx:id="result_changeDirButton" layoutX="600.0" layoutY="389.0" prefHeight="23.0" prefWidth="55.0" text="浏览" />
+      <ImageView fx:id="imageViewId" fitHeight="65.0" fitWidth="201.0" layoutX="454.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true" />
+      <Separator layoutX="35.0" layoutY="102.0" prefHeight="4.0" prefWidth="651.0" />
+
+   </children>
+
+</AnchorPane>

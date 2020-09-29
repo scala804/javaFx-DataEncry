@@ -1,0 +1,6 @@
+logging:
+  level:
+    com.autoTest.javaFxspringBoot: debug
+  file:
+    name: /home/app/javafx.log
+
